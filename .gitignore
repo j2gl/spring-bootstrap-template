@@ -1,0 +1,25 @@
+# General Files
+temp/
+.DS_Store
+
+# Maven
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Ecliopse
+.classpath
+.project
+.settings
+
+# IntelliJ IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+
+# Java
+*.class
+
+# Visual Studio
+.vscode
+
