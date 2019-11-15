@@ -14,6 +14,10 @@ java -jar target/spring-boostrap-template-1.0.0-SNAPSHOT.jar
 
 ## References
 
-1. Configure IntelliJ 
-    1. https://blog.jetbrains.com/idea/2018/04/spring-and-spring-boot-in-intellij-idea-2018-1/
-    1. https://www.jetbrains.com/help/idea/spring-boot.html
+* Configure IntelliJ for Springboot 
+    * https://blog.jetbrains.com/idea/2018/04/spring-and-spring-boot-in-intellij-idea-2018-1/
+    * https://dev.to/suin/spring-boot-developer-tools-how-to-enable-automatic-restart-in-intellij-idea-1c6i
+    * https://www.jetbrains.com/help/idea/spring-boot.html
+* Bootstrap Themes: 
+    * https://github.com/BlackrockDigital/startbootstrap-landing-page
+

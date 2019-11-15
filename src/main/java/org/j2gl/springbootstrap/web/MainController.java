@@ -21,4 +21,10 @@ public class MainController {
         return "home";
     }
 
+    @GetMapping("/login")
+    public String login(final Model model) {
+        model.addAttribute("appName", appName);
+        return "login";
+    }
+
 }
