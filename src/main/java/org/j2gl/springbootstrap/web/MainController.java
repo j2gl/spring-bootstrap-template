@@ -3,6 +3,8 @@ package org.j2gl.springbootstrap.web;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,7 +23,21 @@ public class MainController {
         return "home";
     }
 
-    @GetMapping("/login")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @GetMapping("/admin-home")
+    public String adminHome(final Model model) {
+        model.addAttribute("appName", appName);
+        return "admin-home";
+    }
+
+    @PreAuthorize("hasRole('ROLE_USER')")
+    @GetMapping("/user-home")
+    public String userHome(final Model model) {
+        model.addAttribute("appName", "User Home");
+        return "user-home";
+    }
+
+    @GetMapping("/custom-login")
     public String login(final Model model) {
         model.addAttribute("appName", appName);
         return "login";
