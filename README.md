@@ -2,10 +2,17 @@
 
 This is just a spring starter using bootstrap.
 
-## Running
-
+## Compile
 ```
-mvn clan package
+mvn clean package
+```
+
+## Running
+```
+mvn spring-boot:run
+``` 
+or 
+```
 java -jar target/spring-boostrap-template-1.0.0-SNAPSHOT.jar
 ```
 
