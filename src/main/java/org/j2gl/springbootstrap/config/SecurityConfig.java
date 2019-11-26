@@ -10,8 +10,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true,
-                            securedEnabled = true,
-                            jsr250Enabled = true)
+        securedEnabled = true,
+        jsr250Enabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
@@ -22,15 +22,17 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
-            .antMatchers("/css/**").permitAll()
-            .antMatchers("/").permitAll()
-            .anyRequest().authenticated()
-            .and()
-            .formLogin()
-            // .loginPage("/custom-login")
-            .and()
-            .logout().logoutSuccessUrl("/");
+        http
+                .authorizeRequests(authorizeRequests ->
+                        authorizeRequests
+                                .antMatchers("/").permitAll()
+                                .antMatchers("/user/**").authenticated()
+                )
+                .formLogin()
+                .and()
+                .logout( logout -> logout
+                        .logoutSuccessUrl("/")
+                );
     }
 
 }

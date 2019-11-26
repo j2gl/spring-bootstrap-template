@@ -4,8 +4,16 @@
 
 This is just a spring starter using bootstrap.
 
-## Running
+## Compile
+```
+mvn clean package
+```
 
+## Running
+```
+mvn spring-boot:run
+``` 
+or 
 ```
 mvn clan package
 java -jar target/spring-bootstrap-template-1.0.0-SNAPSHOT.jar
