@@ -20,7 +20,7 @@ java -jar target/spring-bootstrap-template-1.0.0-SNAPSHOT.jar
 ```
 
 * http://localhost:8080
-* http://localhost:8080/acutator
+* http://localhost:8080/actuator
 
 ## References
 
