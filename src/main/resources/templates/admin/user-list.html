@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<!--suppress ThymeleafVariablesResolveInspection -->
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="fragments/head :: html-head">
+    <title>Offline view</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<div th:replace="fragments/layout :: navbar">(navbar)</div>
+<main role="main" class="container">
+    <h1 class="mt-4" th:text="${appName}"></h1>
+    <h1>User List</h1>
+    <section>
+        <article>
+            <p>
+                <a href="/">Home</a>
+            </p>
+        </article>
+    </section>
+</main>
+
+<footer th:replace="fragments/layout :: footer">(footer)</footer>
+<div th:replace="fragments/scripts :: bottom-scripts"></div>
+</body>
+</html>
