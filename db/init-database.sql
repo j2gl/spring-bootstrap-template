@@ -12,6 +12,8 @@ GRANT ALL PRIVILEGES ON spring_bootstrap.* to usrspringboot@'%';
 
 FLUSH PRIVILEGES;
 
+USE spring_bootstrap;
+
 -- DDL
 CREATE TABLE users
 (
