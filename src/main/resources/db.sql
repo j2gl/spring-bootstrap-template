@@ -1,11 +1,11 @@
-drop table if exists city;
+DROP TABLE IF EXISTS city;
 
-create table city
+CREATE TABLE city
 (
     id      int primary key auto_increment,
-    name    varchar,
-    state   varchar,
-    country varchar
+    name    VARCHAR(255),
+    state   VARCHAR(2),
+    country VARCHAR(2)
 );
 
-insert into city (name, state, country) values ('San Francisco', 'CA', 'US');
+INSERT INTO city (name, state, country) VALUES ('San Francisco', 'CA', 'US');
