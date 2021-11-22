@@ -1,6 +1,6 @@
 # spring-bootstrap-template
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=spring-bootstrap-template)](https://sonarcloud.io/summary/new_code?id=spring-bootstrap-template)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=spring-bootstrap-template&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=spring-bootstrap-template)
 
 This is just a spring starter using bootstrap.
 
@@ -22,4 +22,3 @@ java -jar target/spring-bootstrap-template-1.0.0-SNAPSHOT.jar
     * https://www.jetbrains.com/help/idea/spring-boot.html
 * Bootstrap Themes: 
     * https://github.com/BlackrockDigital/startbootstrap-landing-page
-
